@@ -1,0 +1,29 @@
+import { Color3, Scene, Vector3 } from "@babylonjs/core";
+import {
+    BaseGround,
+    DEFAULT_GROUND_THICKNESS,
+    type GroundSurfaceOptions
+} from "../BaseGround";
+import { Player } from "../../entities/player/Player.ts";
+
+export class SandGround extends BaseGround {
+    private readonly speedMultiplier = 0.5;
+    private readonly jumpSpeedMultiplier = 0.5;
+    public constructor(scene: Scene, options: GroundSurfaceOptions = {}) {
+        super(scene);
+        this.createGroundSurface(
+            "sandGround",
+            options.position ?? new Vector3(-12, 0, 0),
+            new Color3(0.82, 0.74, 0.42),
+            options.width ?? 12,
+            options.depth ?? 12,
+            options.alpha ?? 1,
+            options.thickness ?? DEFAULT_GROUND_THICKNESS
+        );
+    }
+
+    public override onPlayerStay(player: Player): void {
+        player.setMovementSpeedMultiplier(this.speedMultiplier);
+        player.setJumpSpeedMultiplier(this.jumpSpeedMultiplier);
+    }
+}
