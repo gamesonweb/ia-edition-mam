@@ -10,9 +10,9 @@ Jeu de plateforme 3D en **Babylon.js** et **TypeScript**. Le joueur doit atteind
 
 ## Liens importants
 
-**Hébergement (sur serveur dédié) :** TODO
+**Hébergement (sur serveur dédié) :** https://jeuxwebl3miage.kayuu.fr/games/gow-game/
 
-**Vidéo gameplay :** TODO
+**Vidéo gameplay :** https://youtu.be/lngMgwn3fJk?t=139
 
 **... TODO**
 
