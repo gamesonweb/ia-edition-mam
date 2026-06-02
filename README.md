@@ -25,6 +25,11 @@ Nous sommes tous les trois des étudiants en licence MIASHS à Biot, qui étions
 
 **... TODO**
 
+
+## thèmes IA
+
+Le thème « IA » du projet est incarné par les bots (monstres) du jeu, qui agissent de manière autonome et prennent des décisions locales en temps réel. Les comportements sont implémentés par des règles et des automates d'états simples, il n'y a pas d'apprentissage automatique, ce qui permet des réactions rapides et déterministes pendant le jeu. Il patrouille, poursuive le joueur, tir, attaque.
+
 ## Stack technique
 
 - **Babylon.js** pour le rendu 3D et la scène de jeu
